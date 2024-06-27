@@ -6,5 +6,6 @@ while len(my_list) > list_number:
         list_number = list_number + 1
     else:
         list_number = list_number + 1
+    if my_list[0 + list_number] == 0:
         break
 list_number = 0
