@@ -34,6 +34,7 @@ class House():
 
     def __new__(cls, *args, **kwargs):
         cls.houses_history.append(list(args)[0])
+        return super().__new__(cls)
 
     def __del__(self):
         print(f"{self} снесён, но он останется в истории")
